@@ -19,7 +19,9 @@ client.on('messageCreate', (message) => {
   const command = inputCommand.slice(1);
 
   if (!isValidCommand(command)) {
-    return message.reply('Ops! Não reconheci esse comando!');
+    return message.reply(
+      'Meteu essa? Não peguei esse comando ai não parceiro.'
+    );
   }
 
   if (command === 'sum') {
