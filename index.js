@@ -22,10 +22,11 @@ client.on('messageCreate', (message) => {
     return message.reply('Ops! Não reconheci esse comando!');
   }
 
-  console.log(command);
-  console.log(args);
+  if (command === 'sum') {
+    const sum = args.reduce((acc, curr) => acc + Number(curr), 0);
 
-  message.reply('Meteu essa pô?');
+    message.reply(`A soma dos número é: ${sum}`);
+  }
 });
 
 client.login(config.BOT_TOKEN);

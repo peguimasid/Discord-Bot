@@ -1,5 +1,5 @@
 function isValidCommand(command) {
-  const validCommands = ['find', 'ping', 'fala'];
+  const validCommands = ['sum'];
 
   return validCommands.includes(command);
 }
